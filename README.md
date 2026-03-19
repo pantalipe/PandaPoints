@@ -51,9 +51,10 @@ Each buy and sell automatically credits 1% of the transaction value to the refer
 ### Fee Distribution (on buy/sell)
 | Recipient | Amount |
 |-----------|--------|
-| Dev wallet 0 | 1% |
-| Marketing wallet 1 | 2% |
+| Dev wallet | 1% |
+| Marketing wallet | 2% |
 | Liquidity reward pool | 1% |
+| Staking pool | 1% (in tokens) |
 | Referrer (or trader) | 1% |
 
 ## Contract Architecture
@@ -70,7 +71,6 @@ This is a flattened single-file contract (`ppflat.sol`) that includes:
 
 - Solidity `^0.8.18`
 - OpenZeppelin Contracts v4.8.0
-- Hardhat (deployment and testing)
 - Binance Smart Chain (BSC)
 
 ## Security Notes
